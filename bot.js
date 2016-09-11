@@ -22,7 +22,7 @@ botRegexReid = /^\/reid;botRegexBurn = /^\/burn/;botRegexTom = /^\/tom/;botRegex
   }
   else if(request.text && botRegexDL.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/BSD/team/"+request.text.substring(5,8)+"/depthchart");
+    postMessage("http://daddyleagues.com/NLB/team/"+request.text.substring(5,8)+"/depthchart");
     this.res.end();
   }
   else if(request.text && botRegexHarper.test(request.text)) {
